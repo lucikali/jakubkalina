@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("../images/main-picture-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+  height: 700px;
+}
+
+.headline{
+  position:absolute;
+  bottom: 50px;
+  right:50px;
+}
+
+.container nav {
+  float: right;
+}
+
+.strip {
+  /*background-color: rgba(42, 42, 42, 1);*/
+  width: 100%;
+  height: 50px;
+  /*opacity: 0.5;*/
+}
+
+.container nav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fdd835;
+  display: inline-block;
+  /*width: 16.666666667%;*/
+  font-size: 14px;
+  font-family: panton;
+  margin-right: 50px;
+  text-align: right;
+  margin-top: 17px;
+  margin-bottom: 15px;
+}
+
+.container nav a:hover {
+  color: white ;
+}
+
+.o-mne {
+  /*display: block;*/
+  width: 40%;
+  float: left;
+  margin-left: 75px;
+  height: 500px;
+}
+
+.o-mne p {
+  width: 350px;
+  font-family: roboto;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.photo {
+  /*background-color: black;*/
+  /*display: block;*/
+  width: 50%;
+  float: right;
+  height: 500px;
+  background-image: url("../images/working.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prelozeno {
+height: 650px;
+background-color: rgba(42, 42, 42, 1);
+padding-top: 50px;
+width: 100%;
+}
+
+.prelozeno h4 {
+  /*margin-left: 75px;*/
+  /*margin-top: 50px;*/
+  text-align: center;
+  margin-bottom: 0px;
+  }
+
+.prelozeno nav a {
+  font-size: 14px;
+  color: white;
+  font-family: roboto;
+  font-weight: 100;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.prelozeno nav a:hover{
+  color: #fdd835;
+}
+.prelozeno nav {
+  text-align: center;
+}
+.prelozeno span {
+  color: #fdd835
+}
+.prelozeno .books {
+  /*position: absolute;*/
+  width: 100%;
+  text-align: center;
+  font-size: 0px;
+}
+
+.prelozeno .book {
+  width: 170px;
+  height: 237px;
+  margin-top: 50px;
+  display: inline-block;
+  /*margin-left: 50px;*/
+}
+
+.books.no-margin .book {
+  margin-top: 0px;
+}
+
+.prelozeno .book img {
+  max-width: 100%;
+}
+
+.news {
+  /*display: block;*/
+  width: 100%;
+  height: 400px;
+  padding-top: 50px;
+}
+
+.news h4 {
+  text-align: center;
+  margin-bottom: 0px;
+  }
+
+.news .cards {
+  text-align: center;
+  width: 100%;
+}
+
+.news .card {
+  height: 265px;
+  width: 215px;
+  background-color: grey;
+  display: inline-block;
+  margin-top: 50px;
+}
+ .news .card-middle {
+   height: 265px;
+   width: 215px;
+   background-color: grey;
+   display: inline-block;
+   margin-top: 50px;
+   margin-left: 10px;
+   margin-right: 10px;
+ }
+
+
+.footer {
+  height: 150px;
+  width: 100%;
+  background-color:rgba(42, 42, 42, 1);
+  margin-top: 0px;
+}
+
+.footer p {
+  color: white;
+  font-family: roboto;
+  font-size: 12px;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 30px;
+  line-height: 22px;
+  margin-top: 0px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  font-family: roboto;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+.footer a:hover {
+  color:#fdd835;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
+.logo:hover{
+  content: url("../images/Logo-yellow.png")
+}
+h1{
+  font-family: Panton;
+  font-weight: lighter;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: white;
+  }
+
+h2 {
+  font-family: Panton;
+  font-weight: lighter;
+  font-size: 29px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: right;
+  color: #fdd835;
+}
+
+h3 {
+  font-family: Panton;
+  font-weight: lighter;
+  font-size: 29px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  text-align: left;
+  color: #fdd835;
+}
+
+h4 {
+  font-family: Panton;
+  font-weight: lighter;
+  font-size: 29px;
+  text-align: left;
+  color: #fdd835;
+  margin-top: 0px;
+}
+
+.clear {
+  display: block;
+  clear: both;
+  height: 0px;
+}
