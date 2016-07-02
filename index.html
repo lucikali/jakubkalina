@@ -10,11 +10,10 @@
   <div class="container" id="home">
     <header class="site header">
       <nav>
-          <a href="#" class="uppercase">O mně</a>
-          <a href="#" class="uppercase">Přeložené knihy</a>
-  				<a href="#" class="uppercase">Připravuje se</a>
-  				<a href="#" class="uppercase">Novinky</a>
-  				<a href="#" class="uppercase">Kontakt</a>
+          <a href="#o-mne" class="uppercase" data-smooth-scroll>O mně</a>
+          <a href="#prelozeno" class="uppercase" data-smooth-scroll>Přeložené knihy</a>
+  				<a href="#news" class="uppercase" data-smooth-scroll>Novinky</a>
+  				<a href="#kontakt" class="uppercase" data-smooth-scroll>Kontakt</a>
   		</nav>
     </header>
     <div class="strip">
@@ -26,76 +25,124 @@
       <h2>Literární překladatel</h2>
     </div>
   </div>
-  <div>
-    <div class="o-mne">
-      <h3>O mně
-      </h3>
-      <p>
-        O kariéře literárního překladatele jsem začal snít někdy na střední škole.
-        Bavily mě jazyky, bavily mě knihy, a když jsem četl příběh v originále, hned mi v hlavě naskakovalo,
-        jak bych ho asi přeložil do češtiny. Měl jsem to štěstí, že se mi můj sen splnil. Literární překlady
-        z angličtiny dnes živí nejen mě, ale i moji rodinu. Za rok přeložím asi patnáct kratších či delších titulů.
-        Každá nově vydaná kniha mě těší, vždy si ji rád prolistuji a hrdě zařadím do archivu k těm ostatním.
-        Věřím, že stejné potěšení přinášejí i českým čtenářům.
-        Ze své práce si prozatím nejvíce cením knihy Jsou světla, která nevidíme autora Anthonyho Doerra.
-        Můj český překlad této knihy, která byla mimo jiné oceněna Pulitzerovou cenou za literaturu, vydalo v září
-        2015 brněnské nakladatelství MOBA.
-     </p>
+  <div class="half-width-shelfs" id="o-mne">
+    <div class="shelf">
+      <div class="o-mne">
+        <h3>O mně
+        </h3>
+        <p>
+          O kariéře literárního překladatele jsem začal snít někdy na střední škole.
+          Bavily mě jazyky, bavily mě knihy, a když jsem četl příběh v originále, hned mi v hlavě naskakovalo,
+          jak bych ho asi přeložil do češtiny. Měl jsem to štěstí, že se mi můj sen splnil. Literární překlady
+          z angličtiny dnes živí nejen mě, ale i moji rodinu. Za rok přeložím asi patnáct kratších či delších titulů.
+          Každá nově vydaná kniha mě těší, vždy si ji rád prolistuji a hrdě zařadím do archivu k těm ostatním.
+          Věřím, že stejné potěšení přinášejí i českým čtenářům.
+          Ze své práce si prozatím nejvíce cením knihy Jsou světla, která nevidíme autora Anthonyho Doerra.
+          Můj český překlad této knihy, která byla mimo jiné oceněna Pulitzerovou cenou za literaturu, vydalo v září
+          2015 brněnské nakladatelství MOBA.
+       </p>
+      </div>
     </div>
-    <div class="photo"></div>
+    <div class="photo shelf"></div>
     <div class="clear"></div>
   </div>
 
-  <div class="prelozeno">
+  <div class="prelozeno" id="prelozeno">
     <h4>Přeložené knihy
     </h4>
     <nav class>
-      <a href="#">Pro dospělé </a>  <span> | </span>
-      <a href="#"> Pro děti a mládež</a>
+      <a href="#" data-show-book-section="adult">Pro dospělé </a>
+      <span> | </span>
+      <a href="#" data-show-book-section="child"> Pro děti a mládež</a>
     </nav>
-  <div class="books">
-    <div class="book">
-      <img src="./images/svetla.jpg" alt="svetla-ktera-nevidime">
+
+    <div class="books-container" data-books-section="adult">
+      <div class="books">
+        <div class="book">
+          <div class="info">
+            <span>Hello world</span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/svetla.jpg" alt="svetla-ktera-nevidime">
+          </div>
+        </div>
+        <div class="book">
+          <img src="./images/zed.jpg" alt="zed-vzpominek">
+        </div>
+        <div class="book">
+          <img src="./images/dabel.jpg" alt="dabel">
+        </div>
+        <div class="book">
+          <img src="./images/pisen-krve.jpg" alt="pisen-krve">
+        </div>
+      </div>
+
+      <div class="books no-margin">
+        <div class="book">
+          <img src="./images/pan-veze.jpg" alt="pan-veze">
+        </div>
+        <div class="book">
+          <img src="./images/dablova-hora.jpg" alt="dablova-hora">
+        </div>
+        <div class="book">
+          <img src="./images/13-hodin.jpg" alt="13-hodin">
+        </div>
+        <div class="book">
+          <img src="./images/7-dni.jpg" alt="7-dni">
+        </div>
+      </div>
     </div>
-    <div class="book">
-      <img src="./images/zed.jpg" alt="zed-vzpominek">
+
+    <div class="books-container" data-books-section="child">
+      <div class="books">
+        <div class="book">
+          <img src="./images/pan-veze.jpg" alt="pan-veze">
+        </div>
+        <div class="book">
+          <img src="./images/dablova-hora.jpg" alt="dablova-hora">
+        </div>
+        <div class="book">
+          <img src="./images/13-hodin.jpg" alt="13-hodin">
+        </div>
+        <div class="book">
+          <img src="./images/7-dni.jpg" alt="7-dni">
+        </div>
+      </div>
+      <div class="books no-margin">
+        <div class="book">
+          <img src="./images/svetla.jpg" alt="svetla-ktera-nevidime">
+        </div>
+        <div class="book">
+          <img src="./images/zed.jpg" alt="zed-vzpominek">
+        </div>
+        <div class="book">
+          <img src="./images/dabel.jpg" alt="dabel">
+        </div>
+        <div class="book">
+          <img src="./images/pisen-krve.jpg" alt="pisen-krve">
+        </div>
+      </div>
     </div>
-    <div class="book">
-      <img src="./images/dabel.jpg" alt="dabel">
-    </div>
-    <div class="book">
-      <img src="./images/pisen-krve.jpg" alt="pisen-krve">
-    </div>
-  <div class="books no-margin">
-    <div class="book">
-      <img src="./images/pan-veze.jpg" alt="pan-veze">
-    </div>
-    <div class="book">
-      <img src="./images/dablova-hora.jpg" alt="dablova-hora">
-    </div>
-    <div class="book">
-      <img src="./images/13-hodin.jpg" alt="13-hodin">
-    </div>
-    <div class="book">
-      <img src="./images/7-dni.jpg" alt="7-dni">
-    </div>
-</div>
+
 
   </div>
 
-  </div>
-  <div class="news">
+  <div class="news" id="news">
     <h4>Novinky
     </h4>
     <div class="cards">
-      <div class="card"></div>
+      <div class="card">
+        <div class="info">
+          Lucie is gay
+        </div>
+      </div>
       <div class="card-middle"></div>
       <div class="card"></div>
     </div>
   </div>
 
   <footer>
-    <div class="footer">
+    <div class="footer" id="kontakt">
     <p>E-mail: <a class="email" href="mailto:jakub.kalina@centrum.cz">jakub.kalina@centrum.cz</a> <br> Tel: +420 724 122 535 <br> ©Jakub Kalina, 2016 <br> Designed and developed by:
       <a href="http://www.luciekalinova.com"><img class="logo" src="./images/Logo-white.png" alt="logo"></a>
       <!-- <a href="#">- www.luciekalinova.com</a> -->

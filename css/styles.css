@@ -54,26 +54,24 @@ h1, h2, h3, h4, h5, h6, .uppercase {
   color: white ;
 }
 
-.o-mne {
-  /*display: block;*/
-  width: 40%;
+.half-width-shelfs > .shelf {
+  width: 50%;
   float: left;
-  margin-left: 75px;
   height: 500px;
 }
 
+.o-mne {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .o-mne p {
-  width: 350px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .photo {
-  /*background-color: black;*/
-  /*display: block;*/
-  width: 50%;
-  float: right;
-  height: 500px;
   background-image: url("../images/working.jpg");
   background-size: cover;
   background-position: center;
@@ -104,15 +102,25 @@ width: 100%;
   padding-left: 5px;
   padding-right: 5px;
 }
-.prelozeno nav a:hover{
+.prelozeno nav a:hover, .prelozeno nav a.active{
   color: #fdd835;
 }
+
 .prelozeno nav {
   text-align: center;
 }
 .prelozeno span {
   color: #fdd835
 }
+
+.prelozeno .books-container {
+  display: none;
+}
+
+.prelozeno .books-container.active {
+  display: block;
+}
+
 .prelozeno .books {
   /*position: absolute;*/
   width: 100%;
@@ -125,7 +133,30 @@ width: 100%;
   height: 237px;
   margin-top: 50px;
   display: inline-block;
-  /*margin-left: 50px;*/
+  position: relative;
+}
+
+.prelozeno .book .info {
+  position: absolute;
+  font-size: initial;
+  background: red;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  -webkit-transition: opacity 300ms ease-in-out;
+  -moz-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.prelozeno .book .info span {
+  background: green;
+  color: white;
+}
+
+.prelozeno .book:hover .info {
+  opacity: 1;
 }
 
 .books.no-margin .book {
@@ -154,12 +185,22 @@ width: 100%;
 }
 
 .news .card {
+  position: relative;
   height: 265px;
   width: 215px;
   background-color: grey;
   display: inline-block;
   margin-top: 50px;
 }
+
+.news .card .info {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background: #fff;
+}
+
  .news .card-middle {
    height: 265px;
    width: 215px;
