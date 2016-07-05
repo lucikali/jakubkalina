@@ -96,13 +96,6 @@ h1, h2, h3, h4, h5, h6, .uppercase {
   position: relative;
 }
 
-/*.books-container .arrow {
-  display: inline-block;
-  margin-top: 200px;
-  position: absolute;
-  margin-left: 30px;
-}*/
-
 .prelozeno h4 {
   text-align: center;
   margin-bottom: 0px;
@@ -350,4 +343,80 @@ h4 {
   display: block;
   clear: both;
   height: 0px;
+}
+
+/* --- TABLET --- */
+@media screen and (max-width: 768px) {
+  .container nav {
+    margin-top: 10px;
+  }
+
+  .o-mne {
+    width: 80%;
+  }
+
+  .half-width-shelfs > .shelf {
+    height: 650px;
+  }
+
+  .prelozeno {
+    height: 1110px
+  }
+
+  .prelozeno .books {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .prelozeno .books .book:nth-child(3), .prelozeno .books .book:nth-child(4) {
+    margin-top: 0;
+  }
+
+  .news .card:nth-child(3) {
+    display: none;
+  }
+
+  .news .cards .left-arrow {
+    margin-right: 30px;
+  }
+
+  .news .cards .right-arrow {
+    margin-left: 30px;
+  }
+}
+
+/* --- MOBILE --- */
+@media screen and (max-width: 640px) {
+  .container nav {
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 10px;
+    float: none;
+  }
+
+  .container nav a {
+    margin-right: 10px;
+  }
+
+  .container .headline {
+    right: 30px;
+  }
+
+  .container .headline h1 {
+    font-size: 40px;
+  }
+
+  .container .headline h2 {
+    font-size: 23px;
+  }
+
+  .half-width-shelfs > .shelf {
+    float: none;
+    width: 100%;
+    height: 500px;
+  }
+
+  .news .card:nth-child(2) {
+    display: none;
+  }
 }

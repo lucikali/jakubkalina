@@ -10,7 +10,7 @@ $(document).ready(function(){
 
   function initHomeBackground() {
     var url = $home.css('background-image').replace(FRAME_IMAGE_URL, '$1').trim();
-    $home.backstretch(url);
+    // $home.backstretch(url);
   }
 
   function showBooksSection(section) {
