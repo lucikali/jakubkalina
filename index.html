@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
 </head>
+
 <body>
   <div class="container" id="home">
     <header class="site header">
@@ -16,14 +17,16 @@
   				<a href="#kontakt" class="uppercase" data-smooth-scroll>Kontakt</a>
   		</nav>
     </header>
-    <div class="strip">
-    <!-- <div clas="arrow">
-    </div> -->
-    </div>
-    <div class="headline">
+  <div class="headline">
       <h1>Jakub Kalina</h1>
       <h2>Literární překladatel</h2>
-    </div>
+  </div>
+
+    <!-- <div>
+      <a href="#">
+        <img src="./images/down-arrow-white.png">
+      </a>
+    </div> -->
   </div>
   <div class="half-width-shelfs" id="o-mne">
     <div class="shelf">
@@ -40,6 +43,9 @@
           Ze své práce si prozatím nejvíce cením knihy Jsou světla, která nevidíme autora Anthonyho Doerra.
           Můj český překlad této knihy, která byla mimo jiné oceněna Pulitzerovou cenou za literaturu, vydalo v září
           2015 brněnské nakladatelství MOBA.
+        <hr>
+        <p><span style="font-weight:bold">Právě překládám:</span><br>Anthony Doerr: The Shell Collector
+        </p>
        </p>
       </div>
     </div>
@@ -50,45 +56,103 @@
   <div class="prelozeno" id="prelozeno">
     <h4>Přeložené knihy
     </h4>
-    <nav class>
+    <nav>
       <a href="#" data-show-book-section="adult">Pro dospělé </a>
       <span> | </span>
       <a href="#" data-show-book-section="child"> Pro děti a mládež</a>
     </nav>
 
     <div class="books-container" data-books-section="adult">
+      <!-- <div class="arrow"><a href="#"><img src="./images/left-arrow-white.png"></a></div> -->
       <div class="books">
         <div class="book">
-          <div class="info">
-            <span>Hello world</span>
+          <div class="info" style="background-image: url(./images/svetla-blur.jpg)">
+            <span>Doerr, Anthony:<br> Jsou světla, která nevidíme <br><br>
+              MOBA, 2015
+            </span>
           </div>
           <div class="atrwork">
             <img src="./images/svetla.jpg" alt="svetla-ktera-nevidime">
           </div>
         </div>
+
         <div class="book">
-          <img src="./images/zed.jpg" alt="zed-vzpominek">
+          <div class="info" style="background-image: url(./images/zed-blur.jpg)">
+            <span>Doerr, Anthony: <br> Zeď vzpomínek <br><br>
+              MOBA, 2016
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/zed.jpg" alt="zed-vzpominek">
+          </div>
         </div>
+
         <div class="book">
-          <img src="./images/dabel.jpg" alt="dabel">
+          <div class="info" style="background-image: url(./images/dabel-blur.jpg)">
+            <span>Pollock, Donald Ray:<br>Ďábel<br><br>
+              MOBA, 2014
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/dabel.jpg" alt="dabel">
+          </div>
         </div>
+
         <div class="book">
+          <div class="info" style="background-image: url(./images/pisen-krve-blur.jpg)">
+            <span>Ryan, Anthony:<br>Píseň krve<br><br>
+              Host, 2014
+            </span>
+          </div>
+          <div class="atrwork">
           <img src="./images/pisen-krve.jpg" alt="pisen-krve">
+          </div>
         </div>
       </div>
 
       <div class="books no-margin">
         <div class="book">
-          <img src="./images/pan-veze.jpg" alt="pan-veze">
+          <div class="info" style="background-image: url(./images/pan-veze-blur.jpg)">
+            <span>Ryan, Anthony:<br>Pán věže<br><br>
+              Host, 2015
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/pan-veze.jpg" alt="pan-veze">
+          </div>
         </div>
+
         <div class="book">
+          <div class="info" style="background-image: url(./images/dablova-hora-blur.jpg)">
+            <span>Meyer, Deon:<br>Ďáblova Hora<br><br>
+              MOBA, 2015
+            </span>
+          </div>
+          <div class="atrwork">
           <img src="./images/dablova-hora.jpg" alt="dablova-hora">
+          </div>
         </div>
+
         <div class="book">
-          <img src="./images/13-hodin.jpg" alt="13-hodin">
+          <div class="info" style="background-image: url(./images/13-hodin-blur.jpg)">
+            <span>Meyer, Deon:<br>13 hodin<br><br>
+              MOBA, 2015
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/13-hodin.jpg" alt="13-hodin">
+          </div>
         </div>
+
         <div class="book">
-          <img src="./images/7-dni.jpg" alt="7-dni">
+          <div class="info" style="background-image: url(./images/7-dni-blur.jpg)">
+            <span>Meyer, Deon:<br>7 dní<br><br>
+              MOBA, 2016
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/7-dni.jpg" alt="7-dni">
+          </div>
         </div>
       </div>
     </div>
@@ -96,57 +160,132 @@
     <div class="books-container" data-books-section="child">
       <div class="books">
         <div class="book">
-          <img src="./images/pan-veze.jpg" alt="pan-veze">
+          <div class="info" style="background-image: url(./images/kids/hon-blur.jpg)">
+            <span>Fukuda, Andrew:<br>Hon <br><br>
+              Fragment, 2014
+            </span>
+          </div>
+        <div class="atrwork">
+          <img src="./images/kids/hon.jpg" alt="hon">
+        </div>
         </div>
         <div class="book">
-          <img src="./images/dablova-hora.jpg" alt="dablova-hora">
+          <div class="info" style="background-image: url(./images/kids/korist-blur.jpg)">
+            <span>Fukuda, Andrew:<br>Kořist <br><br>
+              Fragment, 2014
+            </span>
+          </div>
+        <div class="atrwork">
+          <img src="./images/kids/korist.jpg" alt="korist">
+        </div>
         </div>
         <div class="book">
-          <img src="./images/13-hodin.jpg" alt="13-hodin">
+          <div class="info" style="background-image: url(./images/kids/past-blur.jpg)">
+            <span>Fukuda, Andrew:<br>Past <br><br>
+              Fragment, 2015
+            </span>
+          </div>
+        <div class="atrwork">
+          <img src="./images/kids/past.jpg" alt="past">
+        </div>
         </div>
         <div class="book">
-          <img src="./images/7-dni.jpg" alt="7-dni">
+          <div class="info" style="background-image: url(./images/kids/zrozeni-blur.jpg)">
+            <span>Mull, Brandon:<br>Zrození Hrdinů <br>(Série Spirit Animals)<br><br>
+              Fragment, 2015
+            </span>
+          </div>
+        <div class="atrwork">
+          <img src="./images/kids/zrozeni.jpg" alt="zrozeni-hrdinu">
+        </div>
         </div>
       </div>
       <div class="books no-margin">
         <div class="book">
-          <img src="./images/svetla.jpg" alt="svetla-ktera-nevidime">
+          <div class="info" style="background-image: url(./images/kids/hrozba-blur.jpg)">
+            <span>Stiefvater, Maggie:<br>Skrytá Hrozba <br>(Série Spirit Animals)<br><br>
+              Fragment, 2015
+            </span>
+          </div>
+        <div class="atrwork">
+          <img src="./images/kids/hrozba.jpg" alt="skryta-hrozba">
+        </div>
+      </div>
+        <div class="book">
+          <div class="info" style="background-image: url(./images/kids/pouto-blur.jpg)">
+            <span>Williams, S.; Garth, N.:<br>Pokrevní Pouto<br>(Série Spirit Animals)<br><br>
+              Fragment, 2015
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/kids/pouto.jpg" alt="pokrevni-pouto">
+          </div>
         </div>
         <div class="book">
-          <img src="./images/zed.jpg" alt="zed-vzpominek">
+          <div class="info" style="background-image: url(./images/kids/ledova-past-blur.jpg)">
+            <span>Haleová, Shannon:<br>Ledová Past<br>(Série Spirit Animals)<br><br>
+              Fragment, 2015
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/kids/ledova-past.jpg" alt="ledova-past">
+          </div>
         </div>
         <div class="book">
-          <img src="./images/dabel.jpg" alt="dabel">
-        </div>
-        <div class="book">
-          <img src="./images/pisen-krve.jpg" alt="pisen-krve">
+          <div class="info" style="background-image: url(./images/kids/vody-blur.jpg)">
+            <span>Sutherlandová, Tui T.:<br>Zrádné Vody<br>(Série Spirit Animals)<br><br>
+              Fragment, 2016
+            </span>
+          </div>
+          <div class="atrwork">
+            <img src="./images/kids/vody.jpg" alt="zradne-vody">
+          </div>
         </div>
       </div>
     </div>
-
-
   </div>
 
   <div class="news" id="news">
     <h4>Novinky
     </h4>
     <div class="cards">
+      <a href="#"><img class="left-arrow" src="./images/arrow-left.jpg"></a>
       <div class="card">
         <div class="info">
-          Lucie is gay
+        <h6>Vyjde v roce 2016</h6>
+          <p>
+            I v roce 2016 vyjde spousta krásných a zajímavých knih, na jejichž přípravě jsem se podílel jako překladatel...
+          </p>
         </div>
       </div>
-      <div class="card-middle"></div>
-      <div class="card"></div>
+
+      <div class="card card-middle">
+        <div class="info">
+        <h6>Vyšel Pán věže</h6>
+          <p>
+            V nakladatelství Host vyšel druhý díl výborné a oceňované fantasy série Stín Krkavce nazvaný Pán věže.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="info">
+        <h6>Deon Meyer v Praze</h6>
+          <p>
+            Deon Meyer, jihoafrický mistr krimi a jeden z „mých“ autorů, se v rámci evropského turné zastaví i v Praze.
+          </p>
+        </div>
+      </div>
+      <a href="#"><img class="right-arrow" src="./images/arrow-right.jpg"></a>
     </div>
   </div>
 
   <footer>
     <div class="footer" id="kontakt">
-    <p>E-mail: <a class="email" href="mailto:jakub.kalina@centrum.cz">jakub.kalina@centrum.cz</a> <br> Tel: +420 724 122 535 <br> ©Jakub Kalina, 2016 <br> Designed and developed by:
-      <a href="http://www.luciekalinova.com"><img class="logo" src="./images/Logo-white.png" alt="logo"></a>
-      <!-- <a href="#">- www.luciekalinova.com</a> -->
-    </p>
+      <p>E-mail: <a class="email" href="mailto:jakub.kalina@centrum.cz">jakub.kalina@centrum.cz</a> <br> Tel: <a>+420 724 122 535</a> <br> ©Jakub Kalina, 2016 <br> Designed and developed by:
+        <a href="http://www.luciekalinova.com"><img class="logo" src="./images/Logo-yellow.png" alt="logo"></a>
+        <!-- <a href="#">- www.luciekalinova.com</a> -->
+      </p>
 
     </div>
   </footer>
